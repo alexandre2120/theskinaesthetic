@@ -186,3 +186,24 @@ body {
   transform: scale(1.1);
   animation-play-state: paused;
 }
+
+/* ── Success checkmark animation ──────────────── */
+.animate-check {
+  animation: draw-check 0.4s ease-out 0.2s both;
+}
+
+@keyframes draw-check {
+  0% {
+    stroke-dasharray: 30;
+    stroke-dashoffset: 30;
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    stroke-dasharray: 30;
+    stroke-dashoffset: 0;
+    opacity: 1;
+  }
+}

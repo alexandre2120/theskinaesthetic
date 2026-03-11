@@ -122,7 +122,10 @@ export interface Translations {
     treatmentOptions: string[];
     message: string;
     submit: string;
+    sending: string;
     success: string;
+    successDetail: string;
+    error: string;
   };
   footer: {
     description: string;
@@ -440,7 +443,10 @@ const translations: Record<Language, Translations> = {
       ],
       message: 'Mensagem (opcional)',
       submit: 'Agendar Consulta Gratuita',
-      success: 'Obrigada! Entraremos em contacto consigo em breve.',
+      sending: 'A enviar...',
+      success: 'Mensagem enviada com sucesso!',
+      successDetail: 'Obrigada! Entraremos em contacto consigo em breve.',
+      error: 'Ocorreu um erro ao enviar. Por favor, tente novamente.',
     },
     footer: {
       description: 'Massagens terapêuticas e tratamentos corporais de excelência ao domicílio, especializados em bem-estar e cuidados personalizados.',
@@ -761,7 +767,10 @@ const translations: Record<Language, Translations> = {
       ],
       message: 'Message (optional)',
       submit: 'Book Free Consultation',
-      success: 'Thank you! We will contact you shortly.',
+      sending: 'Sending...',
+      success: 'Message sent successfully!',
+      successDetail: 'Thank you! We will contact you shortly.',
+      error: 'An error occurred while sending. Please try again.',
     },
     footer: {
       description: 'At-home therapeutic massages and body treatments specializing in well-being and personalized care.',
@@ -1082,7 +1091,10 @@ const translations: Record<Language, Translations> = {
       ],
       message: 'Mensaje (opcional)',
       submit: 'Reservar Consulta Gratuita',
-      success: '¡Gracias! Nos pondremos en contacto contigo en breve.',
+      sending: 'Enviando...',
+      success: '¡Mensaje enviado con éxito!',
+      successDetail: '¡Gracias! Nos pondremos en contacto contigo en breve.',
+      error: 'Ocurrió un error al enviar. Por favor, inténtalo de nuevo.',
     },
     footer: {
       description: 'Masajes terapéuticos y tratamientos corporales a domicilio, especializados en bienestar y cuidados personalizados.',
