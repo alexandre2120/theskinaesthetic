@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server';
 
-const WEBHOOK_URL = 'https://n8n.bunniemonki.com/webhook/skin-aesthetic-forms';
+const WEBHOOK_URL = 'https://n8n.bunniemonki.com/webhook/99e52bb3-0dfa-4e5c-b3b6-2e914a717548';
 
 export async function POST(request: Request) {
   try {
