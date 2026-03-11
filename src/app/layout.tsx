@@ -1,8 +1,11 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import { Cormorant_Garamond, Raleway } from "next/font/google";
 import { LanguageProvider } from "@/lib/LanguageContext";
 import StructuredData from "@/components/StructuredData";
 import "./globals.css";
+
+const GA_ID = "AW-18008215319";
 
 const cormorant = Cormorant_Garamond({
   variable: "--font-cormorant",
@@ -121,6 +124,19 @@ export default function RootLayout({
       <body
         className={`${cormorant.variable} ${raleway.variable} antialiased`}
       >
+        {/* Google Ads tag (gtag.js) */}
+        <Script
+          src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
+          strategy="afterInteractive"
+        />
+        <Script id="gtag-init" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${GA_ID}');
+          `}
+        </Script>
         <LanguageProvider>
           {children}
         </LanguageProvider>
