@@ -27,7 +27,7 @@ export default function MeetTheTeam() {
               <div className="relative max-w-xs mx-auto lg:mx-0">
                 <div className="aspect-[3/4] rounded-[30px] overflow-hidden border-2 border-cream-dark/20">
                   <Image
-                    src="/jessica-jaques.png"
+                    src="/jessica.jpeg"
                     alt={t.team.name}
                     fill
                     className="object-cover object-top"

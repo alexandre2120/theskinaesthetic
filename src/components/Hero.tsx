@@ -85,25 +85,30 @@ export default function Hero() {
           {/* Jessica Photo */}
           <div className="relative hidden lg:flex items-center justify-center" style={{ animationDelay: '0.3s' }}>
             <div className="relative w-full max-w-md aspect-[3/4]">
-              {/* Gradient backdrop shape behind photo */}
-              <div className="absolute inset-0 rounded-[40%_60%_55%_45%/60%_40%_60%_40%] bg-gradient-to-br from-cream via-rose-gold/10 to-cream-dark shadow-2xl shadow-rose-gold/10" />
-              {/* Photo */}
-              <div className="absolute inset-0 flex items-end justify-center">
+              {/* Gradient backdrop shape — slightly larger, offset behind photo */}
+              <div className="absolute -inset-3 rounded-[42%_58%_52%_48%/58%_42%_58%_42%] bg-gradient-to-br from-cream via-rose-gold/8 to-cream-dark shadow-2xl shadow-rose-gold/10 rotate-2" />
+
+              {/* Organic-shaped photo with background preserved */}
+              <div className="relative w-full h-full rounded-[45%_55%_50%_50%/55%_45%_55%_45%] overflow-hidden shadow-2xl shadow-charcoal/10 z-10">
                 <Image
-                  src="/jessica-jaques.png"
+                  src="/jessica.jpeg"
                   alt={t.hero.imageAlt}
-                  width={500}
-                  height={667}
+                  fill
                   priority
-                  className="relative z-10 w-[90%] h-auto object-contain drop-shadow-2xl"
-                  style={{ filter: 'drop-shadow(0 20px 40px rgba(184, 139, 122, 0.15))' }}
+                  className="object-cover object-top"
+                  sizes="(max-width: 1024px) 0vw, 450px"
                 />
+                {/* Subtle vignette overlay for depth */}
+                <div className="absolute inset-0 bg-gradient-to-t from-charcoal/10 via-transparent to-transparent" />
               </div>
-              {/* Subtle gradient overlay at bottom for blend */}
-              <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-soft-white/60 to-transparent z-20 rounded-b-3xl" />
+
+              {/* Thin decorative ring — echoes the blob shape */}
+              <div className="absolute -inset-6 rounded-[48%_52%_45%_55%/52%_48%_52%_48%] border border-rose-gold/10 z-0 -rotate-3" />
+
               {/* Floating accent elements */}
               <div className="absolute -top-4 -right-4 w-20 h-20 rounded-full bg-sage/15 animate-float z-0" />
               <div className="absolute -bottom-6 -left-6 w-28 h-28 rounded-full border-2 border-rose-gold/15 z-0" style={{ animationDelay: '2s' }} />
+
               {/* Stats badge */}
               <div className="absolute bottom-10 -left-10 bg-white rounded-2xl shadow-xl shadow-charcoal/5 p-4 animate-fade-in z-30" style={{ animationDelay: '0.8s' }}>
                 <div className="flex items-center gap-3">
