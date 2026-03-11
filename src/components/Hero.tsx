@@ -27,17 +27,35 @@ export default function Hero() {
       </div>
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-8 lg:pt-0 lg:pb-0 w-full">
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-20 items-center">
           {/* Text Content */}
-          <div className="space-y-8 animate-fade-up">
-            <div className="space-y-2">
-              <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-cream rounded-full">
-                <svg className="w-3.5 h-3.5 text-rose-gold" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 21v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21m0 0h4.5V3.545M12.75 21h7.5V10.75M2.25 21h1.5m18 0h-18M2.25 9l4.5-1.636M18.75 3l-1.5.545m0 6.205l3 1m1.5.5l-1.5-.5M6.75 7.364V3h-3v18m3-13.636l10.5-3.819" />
-                </svg>
-                <span className="text-xs font-medium tracking-[0.15em] uppercase text-charcoal-light">
-                  {t.hero.badge}
-                </span>
+          <div className="space-y-6 sm:space-y-8 animate-fade-up">
+            {/* Mobile photo + badge row */}
+            <div className="flex items-center gap-4 lg:gap-0">
+              {/* Mobile-only circular photo */}
+              <div className="relative w-16 h-16 sm:w-20 sm:h-20 shrink-0 lg:hidden">
+                <div className="absolute -inset-1 rounded-full bg-gradient-to-br from-cream via-rose-gold/10 to-cream-dark" />
+                <div className="relative w-full h-full rounded-full overflow-hidden shadow-lg shadow-charcoal/10">
+                  <Image
+                    src="/jessica.jpeg"
+                    alt={t.hero.imageAlt}
+                    fill
+                    priority
+                    className="object-cover object-top"
+                    sizes="80px"
+                  />
+                </div>
+              </div>
+              <div className="space-y-2">
+                <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-cream rounded-full">
+                  <svg className="w-3.5 h-3.5 text-rose-gold" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 21v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21m0 0h4.5V3.545M12.75 21h7.5V10.75M2.25 21h1.5m18 0h-18M2.25 9l4.5-1.636M18.75 3l-1.5.545m0 6.205l3 1m1.5.5l-1.5-.5M6.75 7.364V3h-3v18m3-13.636l10.5-3.819" />
+                  </svg>
+                  <span className="text-xs font-medium tracking-[0.15em] uppercase text-charcoal-light">
+                    {t.hero.badge}
+                  </span>
+                </div>
+                <p className="text-xs text-charcoal-light/60 font-medium lg:hidden">Jessica Jaques</p>
               </div>
             </div>
 
@@ -96,7 +114,7 @@ export default function Hero() {
                   fill
                   priority
                   className="object-cover object-top"
-                  sizes="(max-width: 1024px) 0vw, 450px"
+                  sizes="(max-width: 1024px) 0px, 450px"
                 />
                 {/* Subtle vignette overlay for depth */}
                 <div className="absolute inset-0 bg-gradient-to-t from-charcoal/10 via-transparent to-transparent" />
