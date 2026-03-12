@@ -145,6 +145,16 @@ export interface Translations {
   whatsapp: {
     tooltip: string;
   };
+  womensDay: {
+    badge: string;
+    headline: string;
+    subheadline: string;
+    discount: string;
+    discountDetail: string;
+    ctaWhatsApp: string;
+    ctaForm: string;
+    close: string;
+  };
 }
 
 const translations: Record<Language, Translations> = {
@@ -464,6 +474,16 @@ const translations: Record<Language, Translations> = {
     whatsapp: {
       tooltip: 'Fale connosco no WhatsApp',
     },
+    womensDay: {
+      badge: '🌸 Mês da Mulher · Março',
+      headline: 'Não é só uma data,\né um mês inteiro de auto cuidado',
+      subheadline: 'Porque você merece cuidado todos os dias. Celebre março com um presente para a sua pele.',
+      discount: '50% OFF',
+      discountDetail: 'na 1.ª sessão de Microdermoabrasão',
+      ctaWhatsApp: 'Agendar pelo WhatsApp',
+      ctaForm: 'Preencher Formulário',
+      close: 'Fechar',
+    },
   },
 
   en: {
@@ -782,6 +802,16 @@ const translations: Record<Language, Translations> = {
     whatsapp: {
       tooltip: 'Chat with us on WhatsApp',
     },
+    womensDay: {
+      badge: '🌸 Women\'s Month · March',
+      headline: 'It\'s not just a date,\nit\'s a whole month of self-care',
+      subheadline: 'Because you deserve care every day. Celebrate March with a gift for your skin.',
+      discount: '50% OFF',
+      discountDetail: 'on your 1st Microdermabrasion session',
+      ctaWhatsApp: 'Book on WhatsApp',
+      ctaForm: 'Fill the Form',
+      close: 'Close',
+    },
   },
 
   es: {
@@ -1099,6 +1129,16 @@ const translations: Record<Language, Translations> = {
     },
     whatsapp: {
       tooltip: 'Habla con nosotros en WhatsApp',
+    },
+    womensDay: {
+      badge: '🌸 Mes de la Mujer · Marzo',
+      headline: 'No es solo una fecha,\nes un mes entero de autocuidado',
+      subheadline: 'Porque mereces cuidado todos los días. Celebra marzo con un regalo para tu piel.',
+      discount: '50% OFF',
+      discountDetail: 'en tu 1.ª sesión de Microdermoabrasión',
+      ctaWhatsApp: 'Reservar por WhatsApp',
+      ctaForm: 'Rellenar Formulario',
+      close: 'Cerrar',
     },
   },
 };

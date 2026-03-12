@@ -12,6 +12,7 @@ import FAQ from '@/components/FAQ';
 import BookingCTA from '@/components/BookingCTA';
 import Footer from '@/components/Footer';
 import WhatsAppButton from '@/components/WhatsAppButton';
+import WomensDayModal from '@/components/WomensDayModal';
 
 export default function Home() {
   return (
@@ -32,6 +33,7 @@ export default function Home() {
       </main>
       <Footer />
       <WhatsAppButton />
+      <WomensDayModal />
     </>
   );
 }
