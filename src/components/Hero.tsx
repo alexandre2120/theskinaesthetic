@@ -136,7 +136,7 @@ export default function Hero() {
                     </svg>
                   </div>
                   <div>
-                    <p className="text-xs text-charcoal-light">+500</p>
+                    <p className="text-xs text-charcoal-light">+150</p>
                     <p className="text-[10px] text-charcoal-light/60 tracking-wide">{t.trust.clients}</p>
                   </div>
                 </div>

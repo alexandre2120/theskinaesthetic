@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   // --- Core Meta ---
   title: "The Skin Aesthetic | Jessica Jaques — Massagens e Tratamentos Corporais em Lisboa e Setúbal",
   description:
-    "Massagens terapêuticas e tratamentos corporais ao domicílio em Lisboa e Setúbal. Massagem relaxante, terapêutica, drenagem linfática, redutora, gestantes e tratamento de estrias. Mais de 8 anos de experiência e 500+ clientes satisfeitas. Consulta de avaliação gratuita.",
+    "Massagens terapêuticas e tratamentos corporais ao domicílio em Lisboa e Setúbal. Massagem relaxante, terapêutica, drenagem linfática, redutora, gestantes e tratamento de estrias. Mais de 3 anos de experiência e 150+ clientes satisfeitas. Consulta de avaliação gratuita.",
   keywords: [
     "massagem relaxante Lisboa",
     "massagem terapêutica ao domicílio",
@@ -56,7 +56,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "The Skin Aesthetic | Jessica Jaques — Massagens e Bem-Estar ao Domicílio",
     description:
-      "Massagens terapêuticas e tratamentos corporais personalizados ao domicílio em Lisboa e Setúbal. Relaxante, terapêutica, drenagem linfática e tratamento de estrias. 500+ clientes satisfeitas. Consulta gratuita.",
+      "Massagens terapêuticas e tratamentos corporais personalizados ao domicílio em Lisboa e Setúbal. Relaxante, terapêutica, drenagem linfática e tratamento de estrias. 150+ clientes satisfeitas. Consulta gratuita.",
     type: "website",
     locale: "pt_PT",
     alternateLocale: ["en_US", "es_ES"],

@@ -5,8 +5,8 @@ import { useLanguage } from '@/lib/LanguageContext';
 import ScrollReveal from './ScrollReveal';
 
 const stats = [
-  { value: '8+', icon: 'calendar' },
-  { value: '500+', icon: 'users' },
+  { value: '3+', icon: 'calendar' },
+  { value: '150+', icon: 'users' },
   { value: '5', icon: 'award' },
   { value: '98%', icon: 'heart' },
 ];

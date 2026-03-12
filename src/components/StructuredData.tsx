@@ -96,7 +96,7 @@ const localBusiness = {
   aggregateRating: {
     '@type': 'AggregateRating',
     ratingValue: '4.9',
-    reviewCount: '500',
+    reviewCount: '150',
     bestRating: '5',
     worstRating: '1',
   },
@@ -202,7 +202,7 @@ const person = {
   name: 'Jessica Jaques',
   jobTitle: 'Esteticista & Massoterapeuta',
   description:
-    'Esteticista e massoterapeuta com mais de 8 anos de experiência em massagens terapêuticas e tratamentos corporais. Licenciada em Estética e Cosmética, com especializações em massoterapia, drenagem linfática e tratamentos corporais. Membro da Associação Portuguesa de Estética.',
+    'Esteticista e massoterapeuta com mais de 3 anos de experiência em massagens terapêuticas e tratamentos corporais.',
   image: `${SITE_URL}/jessica-jaques.png`,
   url: SITE_URL,
   worksFor: {
@@ -218,28 +218,6 @@ const person = {
     'Tratamento de Estrias',
     'Microderme Regenerativa',
   ],
-  hasCredential: [
-    {
-      '@type': 'EducationalOccupationalCredential',
-      name: 'Licenciatura em Estética e Cosmética',
-    },
-    {
-      '@type': 'EducationalOccupationalCredential',
-      name: 'Especialização em Massoterapia',
-    },
-    {
-      '@type': 'EducationalOccupationalCredential',
-      name: 'Certificação em Drenagem Linfática',
-    },
-    {
-      '@type': 'EducationalOccupationalCredential',
-      name: 'Formação em Tratamentos Corporais',
-    },
-  ],
-  memberOf: {
-    '@type': 'Organization',
-    name: 'Associação Portuguesa de Estética',
-  },
 };
 
 // --- Service schemas (individual services with pricing) ---
