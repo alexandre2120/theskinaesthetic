@@ -2,6 +2,7 @@
 
 import { useState, FormEvent } from 'react';
 import { useLanguage } from '@/lib/LanguageContext';
+import { fireConversion } from '@/lib/gtag';
 import ScrollReveal from './ScrollReveal';
 
 type FormStatus = 'idle' | 'submitting' | 'success' | 'error';
@@ -32,6 +33,7 @@ export default function BookingCTA() {
       if (!res.ok) throw new Error('Failed');
       setStatus('success');
       form.reset();
+      fireConversion();
     } catch {
       setStatus('error');
     }
