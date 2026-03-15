@@ -2,6 +2,7 @@
 
 import Image from 'next/image';
 import { useLanguage } from '@/lib/LanguageContext';
+import { fireConversion } from '@/lib/gtag';
 
 export default function Footer() {
   const { t } = useLanguage();
@@ -104,10 +105,18 @@ export default function Footer() {
               </div>
               {/* Phone & Email */}
               <div className="space-y-1.5 pt-1">
-                <a href={`tel:${t.footer.phone}`} className="block text-sm text-white/40 hover:text-rose-gold-light transition-colors">
+                <a
+                  href={`tel:${t.footer.phone}`}
+                  onClick={() => fireConversion()}
+                  className="block text-sm text-white/40 hover:text-rose-gold-light transition-colors"
+                >
                   {t.footer.phone}
                 </a>
-                <a href={`mailto:${t.footer.email}`} className="block text-sm text-white/40 hover:text-rose-gold-light transition-colors">
+                <a
+                  href={`mailto:${t.footer.email}`}
+                  onClick={() => fireConversion()}
+                  className="block text-sm text-white/40 hover:text-rose-gold-light transition-colors"
+                >
                   {t.footer.email}
                 </a>
               </div>

@@ -26,9 +26,11 @@ export default function WomensDayModal() {
 
   const close = () => setVisible(false);
 
-  const handleWhatsApp = () => {
-    fireConversion();
+  const handleWhatsApp = async (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    await fireConversion();
     close();
+    window.open(WHATSAPP_URL, '_blank', 'noopener,noreferrer');
   };
 
   const handleForm = () => {
