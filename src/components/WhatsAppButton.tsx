@@ -3,15 +3,23 @@
 import { useLanguage } from '@/lib/LanguageContext';
 import { fireConversion } from '@/lib/gtag';
 
+const WHATSAPP_HREF = 'https://wa.me/351931943608';
+
 export default function WhatsAppButton() {
   const { t } = useLanguage();
 
+  const handleClick = async (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    await fireConversion();
+    window.open(WHATSAPP_HREF, '_blank', 'noopener,noreferrer');
+  };
+
   return (
     <a
-      href="https://wa.me/351931943608"
+      href={WHATSAPP_HREF}
       target="_blank"
       rel="noopener noreferrer"
-      onClick={fireConversion}
+      onClick={handleClick}
       className="fixed bottom-6 right-6 z-50 whatsapp-float w-14 h-14 rounded-full bg-[#25D366] flex items-center justify-center group"
       aria-label={t.whatsapp.tooltip}
     >

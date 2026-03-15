@@ -33,7 +33,7 @@ export default function BookingCTA() {
       if (!res.ok) throw new Error('Failed');
       setStatus('success');
       form.reset();
-      fireConversion();
+      await fireConversion();
     } catch {
       setStatus('error');
     }
