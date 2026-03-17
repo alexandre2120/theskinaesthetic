@@ -18,7 +18,7 @@
 
 const SITE_URL = 'https://theskinaesthetic.pt';
 const BUSINESS_NAME = 'The Skin Aesthetic';
-const PHONE = '+351931943608';
+const PHONE = '+351920534489';
 const EMAIL = 'info@theskinaesthetic.pt';
 
 // --- LocalBusiness Schema ---
