@@ -135,7 +135,7 @@ export default function BookingCTA() {
                       name="phone"
                       required
                       className="w-full px-4 py-3 rounded-xl border border-cream bg-cream/30 text-charcoal text-sm placeholder:text-charcoal-light/30 focus:outline-none focus:border-rose-gold/40 focus:bg-white transition-all duration-300"
-                      placeholder="+351 931 943 608"
+                      placeholder="+351 920 534 489"
                     />
                   </div>
 

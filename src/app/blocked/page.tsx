@@ -43,7 +43,7 @@ export default function BlockedPage() {
         {/* Contact */}
         <div className="pt-4">
           <a
-            href="https://wa.me/351931943608"
+            href="https://wa.me/351920534489"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-6 py-3 bg-rose-gold text-white text-sm font-medium rounded-full hover:bg-rose-gold-dark transition-all duration-300"

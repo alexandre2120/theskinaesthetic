@@ -3,7 +3,7 @@
 import { useLanguage } from '@/lib/LanguageContext';
 import { fireConversion } from '@/lib/gtag';
 
-const WHATSAPP_HREF = 'https://wa.me/351931943608';
+const WHATSAPP_HREF = 'https://wa.me/351920534489';
 
 export default function WhatsAppButton() {
   const { t } = useLanguage();
