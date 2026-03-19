@@ -37,7 +37,7 @@ export default function Hero() {
                 <div className="absolute -inset-1 rounded-full bg-gradient-to-br from-cream via-rose-gold/10 to-cream-dark" />
                 <div className="relative w-full h-full rounded-full overflow-hidden shadow-lg shadow-charcoal/10">
                   <Image
-                    src="/jessica.jpeg"
+                    src="/team.jpeg"
                     alt={t.hero.imageAlt}
                     fill
                     priority
@@ -55,7 +55,7 @@ export default function Hero() {
                     {t.hero.badge}
                   </span>
                 </div>
-                <p className="text-xs text-charcoal-light/60 font-medium lg:hidden">Jessica Jaques</p>
+                <p className="text-xs text-charcoal-light/60 font-medium lg:hidden">The Skin Aesthetic</p>
               </div>
             </div>
 
@@ -100,7 +100,7 @@ export default function Hero() {
             </div>
           </div>
 
-          {/* Jessica Photo */}
+          {/* Photo */}
           <div className="relative hidden lg:flex items-center justify-center" style={{ animationDelay: '0.3s' }}>
             <div className="relative w-full max-w-md aspect-[3/4]">
               {/* Gradient backdrop shape — slightly larger, offset behind photo */}
@@ -109,7 +109,7 @@ export default function Hero() {
               {/* Organic-shaped photo with background preserved */}
               <div className="relative w-full h-full rounded-[45%_55%_50%_50%/55%_45%_55%_45%] overflow-hidden shadow-2xl shadow-charcoal/10 z-10">
                 <Image
-                  src="/jessica.jpeg"
+                  src="/team.jpeg"
                   alt={t.hero.imageAlt}
                   fill
                   priority

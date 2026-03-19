@@ -8,7 +8,7 @@
  * Schemas included:
  * - LocalBusiness (with services, pricing, area served)
  * - FAQPage (all FAQ items)
- * - Person (Jessica Jaques credentials)
+ * - Organization (The Skin Aesthetic)
  * - Service (each treatment with pricing)
  * - AggregateRating + Reviews
  * - HowTo (booking process)
@@ -27,22 +27,18 @@ const localBusiness = {
   '@type': 'BeautySalon',
   '@id': `${SITE_URL}/#business`,
   name: BUSINESS_NAME,
-  alternateName: 'The Skin Aesthetic by Jessica Jaques',
+  alternateName: 'The Skin Aesthetic',
   description:
     'Massagens terapêuticas e tratamentos corporais ao domicílio em Lisboa e Setúbal. Massagem relaxante, terapêutica, drenagem linfática, redutora/modeladora, gestantes e tratamento de estrias com microderme regenerativa. Consulta de avaliação gratuita.',
   url: SITE_URL,
   telephone: PHONE,
   email: EMAIL,
-  image: `${SITE_URL}/jessica-jaques.png`,
+  image: `${SITE_URL}/logoastheric.png`,
   logo: `${SITE_URL}/logoastheric.png`,
   priceRange: '€30-€70',
   currenciesAccepted: 'EUR',
   paymentAccepted: 'Cash, Credit Card, MB Way',
   foundingDate: '2018',
-  founder: {
-    '@type': 'Person',
-    '@id': `${SITE_URL}/#jessica`,
-  },
   areaServed: [
     {
       '@type': 'City',
@@ -106,7 +102,7 @@ const localBusiness = {
       author: { '@type': 'Person', name: 'Maria Santos' },
       datePublished: '2025-09-15',
       reviewBody:
-        'A Jessica é extraordinária. Depois das sessões de massagem terapêutica, as tensões que sentia nas costas desapareceram por completo. Sinto-me outra pessoa.',
+        'O serviço é extraordinário. Depois das sessões de massagem terapêutica, as tensões que sentia nas costas desapareceram por completo. Sinto-me outra pessoa.',
       reviewRating: {
         '@type': 'Rating',
         ratingValue: '5',
@@ -118,7 +114,7 @@ const localBusiness = {
       author: { '@type': 'Person', name: 'Ana Ferreira' },
       datePublished: '2025-10-03',
       reviewBody:
-        'Procurei a Jessica para drenagem linfática e o resultado superou todas as expectativas. O inchaço diminuiu notavelmente e sinto-me muito mais leve.',
+        'Fiz a drenagem linfática e o resultado superou todas as expectativas. O inchaço diminuiu notavelmente e sinto-me muito mais leve.',
       reviewRating: {
         '@type': 'Rating',
         ratingValue: '5',
@@ -194,21 +190,16 @@ const localBusiness = {
   },
 };
 
-// --- Person Schema (Jessica Jaques) ---
-const person = {
+// --- Organization Schema ---
+const organization = {
   '@context': 'https://schema.org',
-  '@type': 'Person',
-  '@id': `${SITE_URL}/#jessica`,
-  name: 'Jessica Jaques',
-  jobTitle: 'Esteticista & Massoterapeuta',
+  '@type': 'Organization',
+  '@id': `${SITE_URL}/#organization`,
+  name: BUSINESS_NAME,
   description:
-    'Esteticista e massoterapeuta com mais de 3 anos de experiência em massagens terapêuticas e tratamentos corporais.',
-  image: `${SITE_URL}/jessica-jaques.png`,
+    'Equipa especializada em massagens terapêuticas e tratamentos corporais com mais de 3 anos de experiência.',
+  image: `${SITE_URL}/logoastheric.png`,
   url: SITE_URL,
-  worksFor: {
-    '@type': 'BeautySalon',
-    '@id': `${SITE_URL}/#business`,
-  },
   knowsAbout: [
     'Massagem Relaxante',
     'Massagem Terapêutica',
@@ -409,7 +400,7 @@ const webSite = {
   url: SITE_URL,
   name: BUSINESS_NAME,
   description:
-    'Massagens terapêuticas e tratamentos corporais ao domicílio em Lisboa e Setúbal por Jessica Jaques. Massagem relaxante, terapêutica, drenagem linfática e tratamento de estrias.',
+    'Massagens terapêuticas e tratamentos corporais ao domicílio em Lisboa e Setúbal. Massagem relaxante, terapêutica, drenagem linfática e tratamento de estrias.',
   publisher: {
     '@type': 'BeautySalon',
     '@id': `${SITE_URL}/#business`,
@@ -423,7 +414,7 @@ const webPage = {
   '@type': 'WebPage',
   '@id': `${SITE_URL}/#webpage`,
   url: SITE_URL,
-  name: 'The Skin Aesthetic | Jessica Jaques — Massagens e Tratamentos Corporais em Lisboa e Setúbal',
+  name: 'The Skin Aesthetic — Massagens e Tratamentos Corporais em Lisboa e Setúbal',
   description:
     'Massagens terapêuticas e tratamentos corporais especializados ao domicílio. Relaxamento, bem-estar e cuidados personalizados. Lisboa e Setúbal. Consulta de avaliação gratuita.',
   isPartOf: {
@@ -456,7 +447,7 @@ const breadcrumb = {
 // Combine all schemas
 const allSchemas = [
   localBusiness,
-  person,
+  organization,
   ...serviceSchemas,
   faqPage,
   howTo,
