@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from 'next/server';
 
 const ALLOWED_COUNTRY = 'PT';
 
-// Known search engine and AI bot user-agent patterns
+// Known search engine and AI bot user-agent patterns (bypass geo-block)
 const BOT_PATTERNS = /googlebot|google-inspectiontool|bingbot|slurp|duckduckbot|baiduspider|yandexbot|facebot|facebookexternalhit|twitterbot|linkedinbot|whatsapp|telegrambot|gptbot|chatgpt-user|perplexitybot|claudebot|anthropic-ai|applebot|google-extended/i;
 
 export function middleware(request: NextRequest) {
