@@ -30,33 +30,14 @@ export default function Hero() {
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-20 items-center">
           {/* Text Content */}
           <div className="space-y-6 sm:space-y-8 animate-fade-up">
-            {/* Mobile photo + badge row */}
-            <div className="flex items-center gap-4 lg:gap-0">
-              {/* Mobile-only circular photo */}
-              <div className="relative w-16 h-16 sm:w-20 sm:h-20 shrink-0 lg:hidden">
-                <div className="absolute -inset-1 rounded-full bg-gradient-to-br from-cream via-rose-gold/10 to-cream-dark" />
-                <div className="relative w-full h-full rounded-full overflow-hidden shadow-lg shadow-charcoal/10">
-                  <Image
-                    src="/team.jpeg"
-                    alt={t.hero.imageAlt}
-                    fill
-                    priority
-                    className="object-cover object-top"
-                    sizes="80px"
-                  />
-                </div>
-              </div>
-              <div className="space-y-2">
-                <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-cream rounded-full">
-                  <svg className="w-3.5 h-3.5 text-rose-gold" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 21v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21m0 0h4.5V3.545M12.75 21h7.5V10.75M2.25 21h1.5m18 0h-18M2.25 9l4.5-1.636M18.75 3l-1.5.545m0 6.205l3 1m1.5.5l-1.5-.5M6.75 7.364V3h-3v18m3-13.636l10.5-3.819" />
-                  </svg>
-                  <span className="text-xs font-medium tracking-[0.15em] uppercase text-charcoal-light">
-                    {t.hero.badge}
-                  </span>
-                </div>
-                <p className="text-xs text-charcoal-light/60 font-medium lg:hidden">The Skin Aesthetic</p>
-              </div>
+            {/* Badge */}
+            <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-cream rounded-full">
+              <svg className="w-3.5 h-3.5 text-rose-gold" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 21v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21m0 0h4.5V3.545M12.75 21h7.5V10.75M2.25 21h1.5m18 0h-18M2.25 9l4.5-1.636M18.75 3l-1.5.545m0 6.205l3 1m1.5.5l-1.5-.5M6.75 7.364V3h-3v18m3-13.636l10.5-3.819" />
+              </svg>
+              <span className="text-xs font-medium tracking-[0.15em] uppercase text-charcoal-light">
+                {t.hero.badge}
+              </span>
             </div>
 
             <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-light text-charcoal leading-[1.1] tracking-tight">
@@ -100,27 +81,25 @@ export default function Hero() {
             </div>
           </div>
 
-          {/* Photo */}
+          {/* Brand Visual */}
           <div className="relative hidden lg:flex items-center justify-center" style={{ animationDelay: '0.3s' }}>
-            <div className="relative w-full max-w-md aspect-[3/4]">
-              {/* Gradient backdrop shape — slightly larger, offset behind photo */}
-              <div className="absolute -inset-3 rounded-[42%_58%_52%_48%/58%_42%_58%_42%] bg-gradient-to-br from-cream via-rose-gold/8 to-cream-dark shadow-2xl shadow-rose-gold/10 rotate-2" />
+            <div className="relative w-full max-w-md aspect-square flex items-center justify-center">
+              {/* Gradient backdrop shape */}
+              <div className="absolute inset-0 rounded-[42%_58%_52%_48%/58%_42%_58%_42%] bg-gradient-to-br from-cream via-rose-gold/8 to-cream-dark shadow-2xl shadow-rose-gold/10 rotate-2" />
 
-              {/* Organic-shaped photo with background preserved */}
-              <div className="relative w-full h-full rounded-[45%_55%_50%_50%/55%_45%_55%_45%] overflow-hidden shadow-2xl shadow-charcoal/10 z-10">
+              {/* Logo */}
+              <div className="relative z-10 w-3/4">
                 <Image
-                  src="/team.jpeg"
-                  alt={t.hero.imageAlt}
-                  fill
+                  src="/logoastheric.png"
+                  alt="The Skin Aesthetic"
+                  width={400}
+                  height={400}
                   priority
-                  className="object-cover object-top"
-                  sizes="(max-width: 1024px) 0px, 450px"
+                  className="object-contain"
                 />
-                {/* Subtle vignette overlay for depth */}
-                <div className="absolute inset-0 bg-gradient-to-t from-charcoal/10 via-transparent to-transparent" />
               </div>
 
-              {/* Thin decorative ring — echoes the blob shape */}
+              {/* Thin decorative ring */}
               <div className="absolute -inset-6 rounded-[48%_52%_45%_55%/52%_48%_52%_48%] border border-rose-gold/10 z-0 -rotate-3" />
 
               {/* Floating accent elements */}
