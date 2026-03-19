@@ -175,7 +175,7 @@ const translations: Record<Language, Translations> = {
       subheadline: 'Massagens terapêuticas e tratamentos estéticos personalizados ao domicílio em Lisboa e Setúbal. Relaxamento, alívio de tensões e cuidados especializados no conforto da sua casa.',
       cta: 'Agendar Consulta Gratuita',
       ctaSecondary: 'Conhecer Serviços',
-      imageAlt: 'Jessica Jaques — Massoterapeuta e Esteticista em Lisboa e Setúbal',
+      imageAlt: 'The Skin Aesthetic — Massagens e Tratamentos Corporais em Lisboa e Setúbal',
     },
     trust: {
       years: 'Anos de Experiência',
@@ -263,7 +263,7 @@ const translations: Record<Language, Translations> = {
         {
           name: 'Maria Santos',
           location: 'Lisboa',
-          text: 'A Jessica é extraordinária. As massagens terapêuticas aliviaram completamente as minhas dores nas costas. Sinto-me renovada após cada sessão.',
+          text: 'O serviço é extraordinário. As massagens terapêuticas aliviaram completamente as minhas dores nas costas. Sinto-me renovada após cada sessão.',
           treatment: 'Massagem Terapêutica',
         },
         {
@@ -281,11 +281,11 @@ const translations: Record<Language, Translations> = {
       ],
     },
     team: {
-      label: 'A Profissional',
-      title: 'Conheça a Jessica',
-      name: 'Jessica Jaques',
-      role: 'Esteticista & Massoterapeuta',
-      bio: 'Com mais de 3 anos de experiência em estética e massoterapia, a Jessica é especialista em massagens terapêuticas e tratamentos corporais. A sua abordagem combina técnicas profissionais com atenção personalizada, garantindo bem-estar e resultados visíveis para cada cliente. Leva os tratamentos diretamente à sua casa em zonas de Lisboa e Setúbal, proporcionando uma experiência exclusiva e relaxante no seu ambiente mais confortável.',
+      label: 'Sobre Nós',
+      title: 'Conheça a Nossa Equipa',
+      name: 'The Skin Aesthetic',
+      role: 'Estética & Massoterapia',
+      bio: 'Com mais de 3 anos de experiência em estética e massoterapia, a nossa equipa é especialista em massagens terapêuticas e tratamentos corporais. A nossa abordagem combina técnicas profissionais com atenção personalizada, garantindo bem-estar e resultados visíveis para cada cliente. Levamos os tratamentos diretamente à sua casa em zonas de Lisboa e Setúbal, proporcionando uma experiência exclusiva e relaxante no seu ambiente mais confortável.',
       qualifications: [],
       locations: 'Ao domicílio em Lisboa e Setúbal',
     },
@@ -503,7 +503,7 @@ const translations: Record<Language, Translations> = {
       subheadline: 'Therapeutic massages and personalized body treatments at your home in Lisbon and Setúbal. Relaxation, tension relief, and specialized care in the comfort of your own space.',
       cta: 'Book a Free Consultation',
       ctaSecondary: 'View Services',
-      imageAlt: 'Jessica Jaques — Massage Therapist & Aesthetician in Lisbon and Setúbal',
+      imageAlt: 'The Skin Aesthetic — Massages & Body Treatments in Lisbon and Setúbal',
     },
     trust: {
       years: 'Years of Experience',
@@ -591,7 +591,7 @@ const translations: Record<Language, Translations> = {
         {
           name: 'Maria Santos',
           location: 'Lisbon',
-          text: 'Jessica is extraordinary. The therapeutic massages completely relieved my back pain. I feel renewed after every session.',
+          text: 'The service is extraordinary. The therapeutic massages completely relieved my back pain. I feel renewed after every session.',
           treatment: 'Therapeutic Massage',
         },
         {
@@ -609,11 +609,11 @@ const translations: Record<Language, Translations> = {
       ],
     },
     team: {
-      label: 'The Professional',
-      title: 'Meet Jessica',
-      name: 'Jessica Jaques',
-      role: 'Aesthetician & Massage Therapist',
-      bio: 'With over 3 years of experience in aesthetics and massage therapy, Jessica is a specialist in therapeutic massages and body treatments. Her approach combines professional techniques with personalized attention, ensuring well-being and visible results for every client. She brings treatments directly to your home across Lisbon and Setúbal, providing an exclusive and relaxing experience in your most comfortable environment.',
+      label: 'About Us',
+      title: 'Meet Our Team',
+      name: 'The Skin Aesthetic',
+      role: 'Aesthetics & Massage Therapy',
+      bio: 'With over 3 years of experience in aesthetics and massage therapy, our team specializes in therapeutic massages and body treatments. Our approach combines professional techniques with personalized attention, ensuring well-being and visible results for every client. We bring treatments directly to your home across Lisbon and Setúbal, providing an exclusive and relaxing experience in your most comfortable environment.',
       qualifications: [],
       locations: 'At-home service in Lisbon and Setúbal',
     },
@@ -831,7 +831,7 @@ const translations: Record<Language, Translations> = {
       subheadline: 'Masajes terapéuticos y tratamientos corporales personalizados a domicilio en Lisboa y Setúbal. Relajación, alivio de tensiones y cuidados especializados en la comodidad de tu hogar.',
       cta: 'Reservar Consulta Gratuita',
       ctaSecondary: 'Ver Servicios',
-      imageAlt: 'Jessica Jaques — Masajista y Esteticista en Lisboa y Setúbal',
+      imageAlt: 'The Skin Aesthetic — Masajes y Tratamientos Corporales en Lisboa y Setúbal',
     },
     trust: {
       years: 'Años de Experiencia',
@@ -919,13 +919,13 @@ const translations: Record<Language, Translations> = {
         {
           name: 'Maria Santos',
           location: 'Lisboa',
-          text: 'Jessica es extraordinaria. Después de las sesiones de masaje terapéutico, las tensiones que sentía en la espalda desaparecieron por completo. Me siento otra persona.',
+          text: 'El servicio es extraordinario. Después de las sesiones de masaje terapéutico, las tensiones que sentía en la espalda desaparecieron por completo. Me siento otra persona.',
           treatment: 'Masaje Terapéutico',
         },
         {
           name: 'Ana Ferreira',
           location: 'Setúbal',
-          text: 'Busqué a Jessica para el drenaje linfático y el resultado superó todas las expectativas. La hinchazón disminuyó notablemente y me siento mucho más ligera.',
+          text: 'Hice el drenaje linfático y el resultado superó todas las expectativas. La hinchazón disminuyó notablemente y me siento mucho más ligera.',
           treatment: 'Drenaje Linfático',
         },
         {
@@ -937,11 +937,11 @@ const translations: Record<Language, Translations> = {
       ],
     },
     team: {
-      label: 'La Profesional',
-      title: 'Conoce a Jessica',
-      name: 'Jessica Jaques',
-      role: 'Esteticista y Masoterapeuta',
-      bio: 'Con más de 3 años de experiencia en estética y masoterapia, Jessica es especialista en masajes terapéuticos y tratamientos corporales. Su enfoque combina conocimiento científico con sensibilidad y cuidado, garantizando bienestar y resultados visibles para cada clienta. Lleva los tratamientos directamente a tu hogar en zonas de Lisboa y Setúbal, proporcionando una experiencia exclusiva y personalizada.',
+      label: 'Sobre Nosotros',
+      title: 'Conoce Nuestro Equipo',
+      name: 'The Skin Aesthetic',
+      role: 'Estética y Masoterapia',
+      bio: 'Con más de 3 años de experiencia en estética y masoterapia, nuestro equipo es especialista en masajes terapéuticos y tratamientos corporales. Nuestro enfoque combina conocimiento científico con sensibilidad y cuidado, garantizando bienestar y resultados visibles para cada clienta. Llevamos los tratamientos directamente a tu hogar en zonas de Lisboa y Setúbal, proporcionando una experiencia exclusiva y personalizada.',
       qualifications: [],
       locations: 'A domicilio en Lisboa y Setúbal',
     },
