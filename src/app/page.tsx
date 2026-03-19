@@ -5,7 +5,6 @@ import Services from '@/components/Services';
 import WhyChooseUs from '@/components/WhyChooseUs';
 import BeforeAfter from '@/components/BeforeAfter';
 import Testimonials from '@/components/Testimonials';
-import MeetTheTeam from '@/components/MeetTheTeam';
 import HowItWorks from '@/components/HowItWorks';
 import Pricing from '@/components/Pricing';
 import FAQ from '@/components/FAQ';
@@ -25,7 +24,6 @@ export default function Home() {
         <WhyChooseUs />
         <BeforeAfter />
         <Testimonials />
-        <MeetTheTeam />
         <HowItWorks />
         <Pricing />
         <FAQ />
